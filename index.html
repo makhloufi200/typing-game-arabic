@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class = "img/1.png">
+
+    <!-- loads and hides images so there is no pause in animation transition. -->
+    <div class = "hiddenImg">
+      <img src="img/1.png">
+      <img src="img/2.png">
+      <img src="img/3.png">
+      <img src="img/4.png">
+      <img src="img/5.png">
+      <img src="img/6.png">
+    </div>
+
+    <h1 class = "jumbotron floating">تعلم استعمال لوحة المفاتيح</h1>
+    <div class ="container" id="gameContent">
+      <!-- hub of level, score and time -->
+      <div class = "row">
+        <div class = "col-xs-4" id="levelDiv">
+          <h5 class = "ScoreTag pulse">النتيجة: <span class="score"></span></h5>
+        </div>
+        <div class = "col-xs-4">
+          <h5 class = "TimeTag pulse">الوقت: <span id="timer"></span></h5>
+        </div>
+        <div class = "col-xs-4">
+		  <h5 class = "LevelTag pulse"><span id="level"></span></h5>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class = "row">
+        <div class = "col-md-12">
+          <!-- Word Output-->
+          <div id="computerOutput" class = "nocursor">
+            <label>:أكتب هذه الكلمة</label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <center><p><span id="arrayTarget"></span></p></center>
+          </div>
+        </div>
+      </div>
+            <br>
+            <br>
+            <br>
+        <!-- Users Input -->
+        <div class = "row">
+          <div class = "col-lg-12">
+            <form id="playerInputForm">
+              <div class="form-group">
+                  <br>
+                  <br>
+                  <input id="playerInput" type="text" class="form-control" placeholder="أكتب الكلمة هنا">
+              </div>
+              <div class = "button">
+              <button type="submit" class="btn btn-default">تنفيذ</button>
+              </div>
+
+            <!-- Timer button -->
+            </form>
+            <center><button type="button" class="btn btn-primary btn-lg" id="playButton">إبدأ</button></center> <!-- timer code line -->
+            <center><button type="button" class="btn btn-primary btn-lg" onClick="history.go(0)" id="startOverButton">أعد التشغيل</button></center>
+          </div>
+        </div>
+      </div>
+<!-- game over screen -->
+      <div class="container" id="gameOver">
+        <p id="lose" class ="floating">لقد خسرت</p>
+        <br>
+        <br>
+        <p id="over" class="floating">انتهت اللعبة</p>
+        <br>
+        <br>
+        <h5 class = "ScoreTag" id="scoreTag">النتيجة النهائية: <span class="score"></span></h5>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form id="refreshButton">
+          <input type="button" class="btn btn-primary btn-lg" onClick="history.go(0)" value="أعد المحاولة">
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+
+<!-- victory screen -->
+      <div class="container" id="victory">
+        <br>
+        <br>
+        <br>
+        <p id="win" class="floating">لقد نجحت!</p>
+        <br>
+        <br>
+        <p id="congrats" class="floating">تهانينا!</p>
+        <br>
+        <br>
+        <h5 class = "ScoreTag" id="scoreTag">النتيجة النهائية: <span class="score"></span></h5>
+        <br>
+        <br>
+        <br>   
+        <form id="refreshButton">
+          <input type="button" class="btn btn-primary btn-lg" onClick="history.go(0)" value="أعد المحاولة">
+        </form>
+        <br>
+        <br>
+        <br>      
+      </div>
+    </body>
+
+</html>

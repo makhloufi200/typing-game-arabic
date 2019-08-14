@@ -1,0 +1,139 @@
+body {
+  font-family: 'Press Start 2P';
+  background: url("../img/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+}
+label{
+  font-size: 25px;
+  
+}
+#playerInput{
+  text-align: center;
+}
+.button{
+  display: none;
+}
+.jumbotron{
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: inherit;
+  font-size: 100px;
+  text-shadow: -1px 2px 10px black;
+}
+.TimeTag{
+  text-align: center;
+  color: #B71B1B;
+  text-shadow: -1px 1px 1px #871010;
+}
+.LevelTag{
+  float: right;
+  color:#B71B1B;
+  text-shadow: -1px 1px 1px #871010;
+}
+.ScoreTag{
+  color:#B71B1B;
+  text-shadow: -1px 1px 1px #871010;
+}
+#scoreTag {
+  color: black;
+}
+#gameContent {
+  transition: 0.1s ease-out;
+}
+#arrayTarget{
+  font-size: 25px;
+  text-align: center;
+  animation:
+}
+#playerInput{
+  border: 0px;
+  border-top: 0px;
+}
+.nocursor {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: Right;
+ }
+#gameOver {
+  display: none;
+  text-align: center;
+  visibility: hidden;
+  animation-duration: 7s;
+  text-shadow: -1px 2px 10px #871010;
+}
+#victory {
+  display: none;
+  text-align: center;
+  visibility: hidden;
+  animation-duration: 7s;
+  text-shadow: -1px 2px 10px #871010;
+}
+#win {
+  font-size: 100px;
+  color: #B71B1B;
+}
+#congrats {
+  font-size: 80px;
+  color: white;
+}
+#lose {
+  font-size: 100px;
+  color: #B71B1B;
+  /*for a gradient:*/
+  /*background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  /*-webkit-text-fill-color: transparent;*/
+}
+#over {
+  font-size: 80px;
+  color: white;
+  /*for a gradient:*/
+  /*background: -webkit-linear-gradient(white, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+#refreshButton {
+  font-size: 40px;
+}
+#startOverButton {
+  display: none;
+}
+.bgChange{
+  background: url("../img/1.png") no-repeat center center fixed;
+  background-size: cover;
+  transition: 2s ease;
+}
+.bgChange2{
+  background: url("../img/2.png") no-repeat center center fixed;
+  background-size:cover;
+  transition: 2s ease;
+}
+.bgChange3{
+  background: url("../img/3.png") no-repeat center center fixed;
+  background-size:cover;
+  transition: 2s ease;
+}
+.bgChange4{
+  background: url("../img/4.png") no-repeat center center fixed;
+  background-size:cover;
+  transition: 2s ease;
+}
+.bgChange5{
+  background: url("../img/5.png") no-repeat center center fixed;
+  background-size:cover;
+  transition: 2s ease;
+}
+.bgChange6{
+  background: url("../img/6.png") no-repeat center center fixed;
+  background-size:cover;
+  transition: 2s ease;
+}
+.hiddenImg{
+  display: none;
+}
